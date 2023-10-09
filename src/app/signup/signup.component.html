@@ -1,0 +1,97 @@
+<!-- <p>signup works!</p> -->
+
+<div class="body">
+    <form (ngSubmit)="submitRegisterForm(registerForm)" [formGroup]="registerForm" class="form_container m-auto">
+        <img class="logo_container" src="../../assets/imgs/logo-removebg-preview.png">
+        <div class="title_container">
+            <p class="title">Signup to your Account</p>
+            <span class="subtitle">Get started with our app, just create an account and enjoy the experience.</span>
+        </div>
+        <br>  
+        <div class="input_container">
+            <label class="input_label" for="displayName_field">Full Name</label>
+            <input formControlName='DisplayName' placeholder="full name" title="input title" name="input-name" type="text"
+                class="input_field" id="displayName_field">
+            <div *ngIf="registerForm.get('DisplayName')?.errors && registerForm.get('DisplayName')?.touched"
+                class="alert alert-danger m-0 p-0 px-2 mb-2">
+                <p class="mb-0" *ngIf="registerForm.get('DisplayName')?.getError('required')">display Name is required</p>
+                <p class="mb-0" *ngIf="registerForm.get('DisplayName')?.getError('minlength')">display Name minlength is 3</p>
+                <p class="mb-0" *ngIf="registerForm.get('DisplayName')?.getError('maxlength')">display Name maxlength is 20</p>
+            </div>
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="firstName_field">First Name</label>
+            <input formControlName='FristName' placeholder="first name" title="input title" name="input-name" type="text"
+                class="input_field" id="firstName_field">
+            <div *ngIf="registerForm.get('FristName')?.errors && registerForm.get('FristName')?.touched"
+                class="alert alert-danger m-0 p-0 px-2 mb-2">
+                <p class="mb-0" *ngIf="registerForm.get('FristName')?.getError('required')">first Name is required</p>
+                <p class="mb-0" *ngIf="registerForm.get('FristName')?.getError('minlength')">first Name minlength is 3</p>
+                <p class="mb-0" *ngIf="registerForm.get('FristName')?.getError('maxlength')">first Name maxlength is 10</p>
+            </div>
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="lastName_field">Last Name</label>
+            <input formControlName='LastName' placeholder="Last Name" title="input title" name="input-name" type="text"
+                class="input_field" id="lastName_field">
+            <div *ngIf="registerForm.get('LastName')?.errors && registerForm.get('LastName')?.touched"
+                class="alert alert-danger m-0 p-0 px-2 mb-2">
+                <p class="mb-0" *ngIf="registerForm.get('LastName')?.getError('required')">last Name is required</p>
+                <p class="mb-0" *ngIf="registerForm.get('LastName')?.getError('minlength')">last Name minlength is 3</p>
+                <p class="mb-0" *ngIf="registerForm.get('LastName')?.getError('maxlength')">last Name maxlength is 10</p>
+            </div>
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="password_field">Password</label>
+            <input formControlName='Password' placeholder="Password" title="input title" name="input-name" type="Password"
+                class="input_field" id="Password_field">
+            <div *ngIf="registerForm.get('Password')?.errors && registerForm.get('Password')?.touched"
+                class="alert alert-danger p-0 m-0 px-2 mb-2">
+                <p class="mb-0" *ngIf="registerForm.get('Password')?.getError('required')">Password is required</p>
+                <p class="mb-0" *ngIf="registerForm.get('Password')?.getError('minlength')">Password minLength is 8</p>
+                <p class="mb-0" *ngIf="registerForm.get('Password')?.getError('pattern')">Password must be upperCase</p>
+            </div>
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="email_field">Email</label>
+            <input formControlName='Email' placeholder="name@mail.com" title="input title" name="input-name" type="text"
+                class="input_field" id="Email_field">
+            <div *ngIf="registerForm.get('Email')?.errors && registerForm.get('Email')?.touched"
+                class="alert alert-danger p-0 m-0 px-2 mb-2">
+                <p class="mb-0" *ngIf="registerForm.get('Email')?.getError('required')">Email is required</p>
+                <p class="mb-0" *ngIf="registerForm.get('Email')?.getError('Email')">Email is invalid</p>
+            </div>
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="age_field">Age</label>
+            <input formControlName='age' type="number" class="form-control input_field  mb-2 px-2" placeholder="Age">
+            <div *ngIf="registerForm.get('age')?.errors && registerForm.get('age')?.touched"
+                class="alert alert-danger p-0 m-0 px-2 mb-3">
+                <p class="mb-0" *ngIf="registerForm.get('age')?.getError('required')">age is required</p>
+                <p class="mb-0" *ngIf="registerForm.get('age')?.getError('min')">age min value is 16</p>
+                <p class="mb-0" *ngIf="registerForm.get('age')?.getError('max')">age max value is 90</p>
+            </div>
+        </div>
+      
+      
+        <div *ngIf="message" class="alert alert-danger p-0 px-2 mb-1">{{message}}</div>
+        <div *ngIf="error" class="alert alert-danger p-0 px-2 mb-1">{{error}}</div>
+    
+        <button [disabled]="registerForm.invalid" title="Sign up" type="submit" class="btn sign-up_btn mt-3">
+            <span *ngIf="!isLoading">Sign Up</span>
+            <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
+        </button>
+    
+        <div class="separator">
+            <hr class="line">
+            <span>Or</span>
+            <hr class="line">
+        </div>
+    
+        <button class="sign-up_ggl">
+            <a class="text-decoration-none" routerLink="../login">Login</a>
+        </button>
+    
+        <p class="note">Terms of use &amp; Conditions</p>
+    </form>
+</div>

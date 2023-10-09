@@ -1,0 +1,23 @@
+
+
+<div class="body">
+    <div class="container py-5 vh-100">
+        <div class="row gy-4">
+            <div *ngFor="let course of myCourses" class="col-md-3 ">
+                <div class="card p-4 shadow ">
+                    <div class="course">
+                        <h5 class="course-type text-dark mb-3 text-center">Track : {{course.course_type}}
+                        </h5>
+                        <h6 class="course-link mb-2 text-body-secondary">
+                            <a [href]="course.course_link" target="_blank"
+                                class="course-name text-white text-decoration-none text-center
+                                 p-2 py-3 bg-primary form-control">
+                                {{course.course_name}}
+                            </a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

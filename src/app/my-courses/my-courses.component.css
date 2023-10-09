@@ -1,0 +1,188 @@
+
+.body{
+    background-image: linear-gradient(180deg,#EBF4F5,#B5C6E0);
+}
+.custom-tab .custom-tab-title.active{
+    border-bottom: 2px solid #0d6efd!important;
+    color: #0d6efd!important;
+    background-color: transparent !important;
+}
+.custom-tab .custom-tab-title:hover{
+    cursor: pointer;
+}
+.custom-tab .custom-tab-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #666!important;
+    padding-bottom: 3px;
+}
+.custom-tab-title:hover{
+    cursor: pointer;
+}
+.custom-tab .tab-item:not(:first-child) {
+    padding-left: 32px;
+}
+.nav{
+    list-style-type: none;
+}
+.custom-search-container {
+    width: 290px;
+}
+.custom-search-container .form-control {
+    padding: 1.25rem 48px 1.25rem 40px!important;
+    border: none;
+    color: #666;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    height: 40px!important;
+}
+.custom-search-container .search-icon-container {
+    left: 11px;
+    top: 0;
+    height: 40px;
+    cursor: pointer;
+    line-height: 36px;
+    width: 24px;
+    color: #0d6efd;
+}
+svg {
+    width: 24;
+    height: 24;
+    fill: none;
+    stroke: #0d6efd;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.search-container .x-of-y {
+    color: #212121;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0 -10px 3rem;
+    justify-content: start;
+}
+.curriculum-card {
+    display: flex;
+    margin: 10px;
+    width: 237px;
+    height: 291px;
+    position: relative;
+    border-radius: 8px;
+    background: linear-gradient(0deg,hsla(0,0%,100%,.7),hsla(0,0%,100%,.7)),#fff;
+    box-shadow: 0 0 1px rgba(48,49,51,.05), 0 1px 3px rgba(48,49,51,.1);
+}
+.curriculum-card .curriculum-card-color-top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.curriculum-card .curriculum-card-icon {
+    display: flex;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+}
+.curriculum-card .curriculum-card-color-top .bug-container {
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.curriculum-card .custom-progress-bar {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 8px;
+    z-index: 0;
+}
+.curriculum-card .custom-progress-bar .progress {
+    height: 8px;
+    width: 100%;
+    background: #e6e6e6;
+    border-radius: 0;
+}
+.custom-progress-bar .progress .progress-bar {
+    background: linear-gradient(90deg,#f7ce68 5.36%,#f79e1b 95.54%);
+    border-radius: 8px;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.curriculum-card .curriculum-card-topic {
+    position: absolute;
+    top: 144px;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 10px;
+    background: none!important;
+}
+.curriculum-card .curriculum-card-title {
+    position: absolute;
+    top: 165px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #2c2c2c;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.curriculum-card .info-group {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    border-top: 1px solid #ececec;
+}
+.info-group .icon-holder {
+    padding: 10px 10px 0;
+}
+.info-group .icon-holder .icon-section {
+    width: 70%;
+    display: inline-block;
+}
+.info-group .icon-holder .icon-section .hover-info-icon {
+    display: inline-block;
+    padding-right: 12px;
+}
+.curriculum-card .info-group .info-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+}
+.info-group .icon-holder .icon-section .hover-info-icon :not([stroke]):not([fill]), .info-group .icon-holder .icon-section .hover-info-icon [fill]:not([fill=none]) {
+    fill: currentColor!important;
+}
+.info-group .icon-holder .duration {
+    width: 20%;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+}
+.chat-icon{
+    bottom: 15px; 
+    right: 15px;
+}
+.card .course h6{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

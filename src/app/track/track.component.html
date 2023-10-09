@@ -1,0 +1,45 @@
+
+<div class="body py-3">
+    <form (ngSubmit)="submitTrackForm(trackForm)" [formGroup]="trackForm" class="form_container m-auto">
+        <img class="logo_container" src="../../assets/imgs/logo-removebg-preview.png">
+        <div class="title_container">
+            <p class="title">To Continue to your Account</p>
+            <span class="subtitle">Get started with our app, just create an account and enjoy the experience.</span>
+        </div>
+        <br>
+         <div class="input_container ">
+            <span class="fw-bold">Note That : <br></span>
+            <p class="input_label ">Track ID for Asp.net is : 1 ,  AI is : 2  and  Angular is : 3 <br> </p>
+            <label class="input_label me-5" for="track">Choose your Track ID:</label>
+            <select class="input_field" [(ngModel)]="track"  formControlName="track" name="track" id="track">
+                <option  value="1">1</option>
+                <option  value="2">2</option>
+                <option  value="3">3</option>
+            </select>
+            <div *ngIf="trackForm.get('track')?.errors && trackForm.get('track')?.touched"
+                class="alert alert-danger p-0 m-0 px-2 mb-2">
+                <p class="mb-0" *ngIf="trackForm.get('track')?.getError('required')">Track is required</p>
+            </div>
+        </div>
+        <div class="input_container ">
+            <span class="fw-bold">Note That : <br></span>
+            <p class="input_label ">Level for Begginner is : 1 ,  Intermediate is : 2  and  Advanced is : 3 <br> </p>
+            <label class="input_label me-5"  for="track">Choose your level:</label>
+            <select class="input_field" [(ngModel)]="level"  formControlName="level" name="level" id="level">
+                <option  value="1">1</option>
+                <option  value="2">2</option>
+                <option  value="3">3</option>
+            </select>
+            <div *ngIf="trackForm.get('level')?.errors && trackForm.get('level')?.touched"
+                class="alert alert-danger p-0 m-0 px-2 mb-2">
+                <p class="mb-0" *ngIf="trackForm.get('level')?.getError('required')">Level is required</p>
+            </div>
+        </div>
+
+        <button [disabled]="trackForm.invalid"  type="submit" class="btn sign-up_btn mt-3">
+            <span >Continue</span>
+        </button>
+    
+        <p class="note">Terms of use &amp; Conditions</p>
+    </form>
+</div>

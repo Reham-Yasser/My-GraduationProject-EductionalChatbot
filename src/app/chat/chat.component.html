@@ -1,0 +1,43 @@
+<div class="body py-5 ">
+  <form class="container shadow-sm my-1" [formGroup]="chatForm">
+    <h3 class="text-center text-primary">Ai Chatbot for helping you </h3>
+    <div class="chatbox">
+      <div >
+        <div class="" >
+          <h6 class="w-75 p-2 mb-2"  [style.color]="isEven == true?'white' : 'black' " [style.float]="isEven == true?'left' : 'right' " [style.backgroundColor]="isEven == true?'#0d6efd' : '#e7e3e3' " *ngFor="let msg of messages; let isEven=even ;"  >{{ msg }}<br></h6><br>
+          <!-- <h6 class="bot mb-4" *ngIf="res">{{ res }}</h6><br> -->
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text" formControlName="message" class="me-3 me-lg-4" name="input-name"
+        placeholder="Type your question here..." [(ngModel)]="message" >
+      <button type="submit" class="btn btn-primary text-white fs-5 me-3 p-2 px-4 rounded-pill" (click)="sendMessage()">
+        <span *ngIf="!isLoading">Send</span>
+        <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
+      </button>
+      <button class="btn btn-primary text-white fs-5 p-2 px-4 rounded-pill" (click)="sendVoice()">
+        <i *ngIf="!isLoad" class="fa fa-solid fa-microphone"></i>
+        <i *ngIf="isLoad" class="fas fa-spinner fa-spin"></i>
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+<!-- <h6 class="user">Do you offer free shipping?</h6>
+     
+      hello! How can i assist you in the field of computer science today
+      <h6 class="bot mb-4">Hello! How can I assist you today?</h6><br>
+      <h6 class="bot">Yes, we offer free shipping on all orders over $50.</h6>
+      <h6 class="user">Great, thank you!</h6>
+      <h6 class="bot">Yes, we offer free shipping on all orders over $50.</h6>
+      <h6 class="user">Great, thank you!</h6>
+      <h6 class="bot">Yes, we offer free shipping on all orders over $50.Yes, we offer free shipping on all orders over $50.Yes, we offer free shipping on all orders over $50.Yes, we offer free shipping on all orders over $50.Yes, we offer free shipping on all orders over $50.Yes, we offer free shipping on all orders over $50.Yes, we offer free shipping on all orders over $50.Yes, we offer free shipping on all orders over $50.Yes, we offer free shipping on all orders over $50.Yes, we offer free shipping on all orders over $50.</h6>
+      <h6 class="user">Great, thank you!</h6> -->

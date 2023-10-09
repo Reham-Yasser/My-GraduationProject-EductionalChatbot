@@ -1,0 +1,46 @@
+<div class="body">
+    <div class=" container py-5 ">
+        <div class="title mb-4">
+            <h2 class="mb-4">Choose a module and start learning</h2>
+            <h4 class="text-black-50">Discover and create your unique learning journey</h4>
+        </div>
+        <div class="search-container my-5">
+            <div class="custom-search-container shadow-sm search-bar">
+                <div class="position-relative w-100 shadow-sm rounded-pill">
+                    <input name="search" [(ngModel)]="filterBy" (input)="filter()" placeholder="Search for a course"
+                        type="text" class="rounded-pill form-control shadow-none">
+                    <div class="position-absolute search-icon-container d-flex align-items-center h-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#06819B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-4">
+            <div *ngFor="let course of allCourses" class="col-md-3 ">
+                <div class="card p-4 shadow ">
+                    <div class="course">
+                        <h5 class="course-type text-dark mb-3 text-center">Track : {{course.Course_type}}
+                        </h5>
+                        <h6 class="course-link mb-2 text-body-secondary">
+                            <a [href]="course.Course_link" target="_blank" class="course-name fw-bold text-white text-decoration-none
+                                 text-center p-2 py-3 bg-primary form-control">
+                                {{course.Course_name}}
+                            </a>
+                        </h6>
+                        <div class="icon-section">
+                            <div class="hover-info-icon mt-3 text-center">
+                                <span class="info-text text-center">Level :
+                                    {{course.Course_level}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

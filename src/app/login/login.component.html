@@ -1,0 +1,47 @@
+<!-- <p>login works!</p> -->
+
+<div class="body">
+  <form (ngSubmit)="submitLoginForm(loginForm)" [formGroup]="loginForm" class="form_container m-auto">
+    <img class="logo_container" src="../../assets/imgs/logo-removebg-preview.png">
+    <div class="title_container">
+      <p class="title">Login to your Account</p>
+      <span class="subtitle text-black">Get started with our app, just create an account and enjoy the experience.</span>
+    </div>
+    <br> 
+    <div class="input_container">
+      <label class="input_label" for="email_field">Email</label>
+      <input formControlName='email' placeholder="name@mail.com" title="Inpit title" name="input-name" type="text"
+        class="input_field" id="email_field">
+      <div *ngIf="loginForm.get('email')?.errors && loginForm.get('email')?.touched"
+        class="alert alert-danger m-0 p-2 py-0 mb-3">
+        <p class="mb-0" *ngIf="loginForm.get('email')?.getError('required')">email is required</p>
+        <p class="mb-0" *ngIf="loginForm.get('email')?.getError('email')">email is invalid</p>
+      </div>
+    </div>
+    <div *ngIf="message" class="form-control alert alert-danger p-0 px-2 mb-1">{{message}}</div> 
+    <div class="input_container">
+      <label class="input_label" for="password_field">Password</label>
+      <input formControlName='password' placeholder="Password" title="Inpit title" name="input-name" type="password"
+        class="input_field" id="password_field">
+      <div *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched"
+        class="alert alert-danger m-0 p-2 py-0 mb-3">
+        <p class="mb-0" *ngIf="loginForm.get('password')?.getError('required')">password is required</p>
+        <p class="mb-0" *ngIf="loginForm.get('password')?.getError('minlength')">password minLength is 8</p>
+        <p class="mb-0" *ngIf="loginForm.get('password')?.getError('pattern')">password must be upperCase</p>
+      </div>
+    </div>
+    <button [disabled]="loginForm.invalid" title="Sign In" type="submit" class="sign-in_btn mt-3">
+      <span *ngIf="!isLoading">Login</span>
+      <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
+    </button>
+    <div class="separator">
+      <hr class="line">
+      <span>Or</span>
+      <hr class="line">
+    </div>
+    <button class="sign-in_ggl">
+      <a class="text-decoration-none" routerLink="../signup">Sign up</a>
+    </button>
+    <p class="note">Terms of use &amp; Conditions</p>
+  </form>
+</div>

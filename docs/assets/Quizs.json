@@ -1,0 +1,703 @@
+[
+  {
+    "name": "ASP.Net Quiz",
+    "questions": [
+      {
+        "title": "What is the purpose of the \\\"using\\\" statement in C#?",
+        "options": [
+          {
+            "name": "To import a namespace",
+            "id": 1
+          },
+          {
+            "name": "To create a new object",
+            "id": 2
+          },
+          {
+            "name": "To define a method",
+            "id": 3
+          },
+          {
+            "name": "To declare a variable",
+            "id": 4
+          }
+        ],
+        "id": 1,
+        "Answer":"To import a namespace"
+      },
+      {
+        "title": "Which of the following is not a primitive data type in C#?",
+        "options": [
+          {
+            "name": "int",
+            "id": 5
+          },
+          {
+            "name": "double",
+            "id": 6
+          },
+          {
+            "name": "string",
+            "id": 7
+          },
+          {
+            "name": "boolean",
+            "id": 8
+          }
+        ],
+        "id": 2,
+        "Answer" : "string"
+      },
+      {
+        "title": "What is the difference between a class and a struct in C#?",
+        "options": [
+          {
+            "name": "A class is a reference type, while a struct is a value type",
+            "id": 9
+          },
+          {
+            "name": "A class is a value type, while a struct is a reference type",
+            "id": 10
+          },
+          {
+            "name": "A class can have methods and properties, while a struct cannot",
+            "id": 11
+          },
+          {
+            "name": "A class is used for inheritance, while a struct is not",
+            "id": 12
+          }
+        ],
+        "id": 3,
+        "Answer" : "A class is a reference type, while a struct is a value type"
+      },
+      {
+        "title": "What is the difference between a value type and a reference type in C#?",
+        "options": [
+          {
+            "name": "Value types are stored on the heap, while reference types are stored on the stack",
+            "id": 9
+          },
+          {
+            "name": "Value types cannot be null, while reference types can",
+            "id": 10
+          },
+          {
+            "name": "Reference types cannot be null, while value types can",
+            "id": 11
+          },
+          {
+            "name": "Value types are stored on the stack, while reference types are stored on the heap",
+            "id": 12
+          }
+        ],
+        "id": 4,
+        "Answer" : "Value types are stored on the stack, while reference types are stored on the heap"
+      },
+      {
+        "title": "What is the purpose of the \\\"finally\\\" block in a try-catch-finally statement in C#?",
+        "options": [
+          {
+            "name": "To specify code that should always be executed",
+            "id": 14
+          },
+          {
+            "name": "To execute code regardless of whether an exception is thrown or not",
+            "id": 15
+          },
+          {
+            "name": "To specify code that should be executed if an exception is thrown",
+            "id": 16
+          },
+          {
+            "name": "To specify code that should be executed if no exception is thrown",
+            "id": 17
+          }
+        ],
+        "id": 5
+        ,"Answer" : "To execute code regardless of whether an exception is thrown or not"
+
+      },
+      {
+        "title": "Which operator is used to compare two values for equality in C#?",
+        "options": [
+          {
+            "name": "=",
+            "id": 18
+          },
+          {
+            "name": "==",
+            "id": 19
+          },
+          {
+            "name": "===",
+            "id": 20
+          },
+          {
+            "name": "!=",
+            "id": 21
+          }
+        ],
+        "id": 6
+        ,"Answer" : "=="
+      },
+      {
+        "title": "What is the purpose of the \\\"var\\\" keyword in C#?",
+        "options": [
+          {
+            "name": "To declare a dynamic type",
+            "id": 18
+          },
+          {
+            "name": "To declare a constant value",
+            "id": 19
+          },
+          {
+            "name": "To declare a variable with its type inferred at compile time",
+            "id": 20
+          },
+          {
+            "name": "To declare a null value",
+            "id": 21
+          }
+        ],
+        "id": 7
+        ,"Answer" : "To declare a variable with its type inferred at compile time"
+      },
+      {
+        "title": "What is the purpose of the \\\"out\\\" keyword in C#?",
+        "options": [
+          {
+            "name": "To pass a value by reference",
+            "id": 22
+          },
+          {
+            "name": "To pass a value by value",
+            "id": 23
+          },
+          {
+            "name": "To pass a value by output\"",
+            "id": 24
+          },
+          {
+            "name": "To pass a value by pointer",
+            "id": 25
+          }
+        ],
+        "id": 8
+        ,"Answer" : "To pass a value by reference"
+      },
+      {
+        "title": "Which of the following is not a valid access modifier in C#?",
+        "options": [
+          {
+            "name": "public",
+            "id": 26
+          },
+          {
+            "name": "private",
+            "id": 27
+          },
+          {
+            "name": "protected",
+            "id": 28
+          },
+          {
+            "name": "static",
+            "id": 29
+          }
+        ],
+        "id": 9
+        ,"Answer" : "static"
+      },
+      {
+        "title": "What is the purpose of the \\\"base\\\" keyword in C#?",
+        "options": [
+          {
+            "name": "To access the parent class in a derived class",
+            "id": 30
+          },
+          {
+            "name": "To access the derived class in a parent class",
+            "id": 31
+          },
+          {
+            "name": "To access the base class in a derived class",
+            "id": 32
+          },
+          {
+            "name": "To access the derived class in a base class",
+            "id": 33
+          }
+        ],
+        "id": 10
+    ,"Answer" : "To access the parent class in a derived class"
+      }
+    ],
+    "id": 1
+  },
+  {
+    "name": "AI Quiz",
+    "questions": [
+      {
+        "title": "What does the acronym \\\"AI\\\" stand for?",
+        "options": [
+          {
+            "name": "Automated Interaction",
+            "id": 34
+          },
+          {
+            "name": "Artificial Intelligence",
+            "id": 35
+          },
+          {
+            "name": "Augmented Interaction",
+            "id": 36
+          },
+          {
+            "name": "Advanced Interchange",
+            "id": 37
+          }
+        ],
+        "id": 11
+        ,"Answer" : "Artificial Intelligence"
+      },
+      {
+        "title": "What is the goal of AI?",
+        "options": [
+          {
+            "name": "To create machines that can feel emotions",
+            "id": 38
+          },
+          {
+            "name": "To create machines that can think like humans",
+            "id": 39
+          },
+          {
+            "name": "To create machines that can replace humans",
+            "id": 40
+          },
+          {
+            "name": "To create machines that can understand human language",
+            "id": 41
+          }
+        ],
+        "id": 12
+        ,"Answer" : "To create machines that can think like humans"
+      },
+      {
+        "title": "Which of the following is not an example of AI?",
+        "options": [
+          {
+            "name": "A self-driving car",
+            "id": 42
+          },
+          {
+            "name": "A chess-playing computer program",
+            "id": 43
+          },
+          {
+            "name": "A calculator",
+            "id": 44
+          },
+          {
+            "name": "A voice-activated assistant",
+            "id": 45
+          }
+        ],
+        "id": 13
+        ,"Answer" : "A calculator"
+      },
+      {
+        "title": "Which of the following is a subfield of AI that focuses on teaching machines to learn from data?\"",
+        "options": [
+          {
+            "name": "Neural networks",
+            "id": 46
+          },
+          {
+            "name": "Decision trees",
+            "id": 47
+          },
+          {
+            "name": "Support vector machines",
+            "id": 48
+          },
+          {
+            "name": "Linear regression",
+            "id": 49
+          }
+        ],
+        "id": 14
+        ,"Answer" : "Neural networks"
+      },
+      {
+        "title": "What is the Turing Test?",
+        "options": [
+          {
+            "name": "A test to see if a machine can think like a human",
+            "id": 50
+          },
+          {
+            "name": "A test to see if a machine can understand human language",
+            "id": 51
+          },
+          {
+            "name": "A test to see if a machine can see like a human",
+            "id": 52
+          },
+          {
+            "name": "A test to see if a machine can hear like a human",
+            "id": 53
+          }
+        ],
+        "id": 15
+        ,"Answer" : "A test to see if a machine can think like a human"
+      },
+      {
+        "title": "What is the difference between supervised and unsupervised learning in AI?",
+        "options": [
+          {
+            "name": "Supervised learning requires labeled data, while unsupervised learning does not.",
+            "id": 54
+          },
+          {
+            "name": "Unsupervised learning requires labeled data, while supervised learning does not.",
+            "id": 55
+          },
+          {
+            "name": "Supervised learning is used for clustering data, while unsupervised learning is used for .",
+            "id": 57
+          },
+          {
+            "name": "Unsupervised learning is used for clustering data, while supervised learning is used for .",
+            "id": 59
+          }
+        ],
+        "id": 16
+        ,"Answer" : "Supervised learning requires labeled data, while unsupervised learning does not."
+      },
+      {
+        "title": "What is the difference between narrow and general AI?",
+        "options": [
+          {
+            "name": "Narrow AI is focused on one specific task, while general AI can perform a wide range of tasks.",
+            "id": 60
+          },
+          {
+            "name": "Narrow AI is focused on a wide range of tasks, while general AI is focused on one specific task.",
+            "id": 61
+          },
+          {
+            "name": "Narrow AI is a subset of general AI.",
+            "id": 62
+          },
+          {
+            "name": "General AI is a subset of narrow AI.",
+            "id": 63
+          }
+        ],
+        "id": 17
+        ,"Answer" : "Narrow AI is focused on one specific task, while general AI can perform a wide range of tasks."
+      },
+      {
+        "title": "What is the difference between artificial intelligence and machine learning?",
+        "options": [
+          {
+            "name": "Machine learning is a subset of artificial intelligence.",
+            "id": 64
+          },
+          {
+            "name": "Artificial intelligence is a subset of machine learning.",
+            "id": 65
+          },
+          {
+            "name": "Machine learning and artificial intelligence are the same thing.",
+            "id": 66
+          },
+          {
+            "name": "Machine learning and artificial intelligence are unrelated.",
+            "id": 67
+          }
+        ],
+        "id": 18
+        ,"Answer" : "Machine learning is a subset of artificial intelligence."
+      },
+      {
+        "title": "What is the difference between deep learning and machine learning?",
+        "options": [
+          {
+            "name": "Deep learning is a type of machine learning that uses neural networks with many layers",
+            "id": 68
+          },
+          {
+            "name": "Deep learning is a type of machine learning that uses simpler algorithms",
+            "id": 69
+          },
+          {
+            "name": "Deep learning and machine learning are the same thing.",
+            "id": 70
+          },
+          {
+            "name": "Deep learning and machine learning are unrelated.",
+            "id": 71
+          }
+        ],
+        "id": 19
+        ,"Answer" : "Deep learning is a type of machine learning that uses neural networks with many layers"
+      },
+      {
+        "title": "What is the difference between artificial intelligence and cognitive computing?",
+        "options": [
+          {
+            "name": "Cognitive computing is a subset of artificial intelligence .",
+            "id": 73
+          },
+          {
+            "name": "Artificial intelligence is a subset of cognitive computing ",
+            "id": 74
+          },
+          {
+            "name": "Cognitive computing and artificial intelligence are the same thing.",
+            "id": 75
+          },
+          {
+            "name": "Cognitive computing and artificial intelligence are unrelated.",
+            "id": 76
+          }
+        ],
+        "id": 20
+        ,"Answer" : "Cognitive computing is a subset of artificial intelligence ."
+      }
+    ],
+    "id": 2
+  },
+  {
+    "name": "Angular Quiz",
+    "questions": [
+      {
+        "title": "What is AngularJS?",
+        "options": [
+          {
+            "name": "AngularJS is an HTML framework.",
+            "id": 77
+          },
+          {
+            "name": "AngularJS is a Java framework.",
+            "id": 78
+          },
+          {
+            "name": "AngularJS is a SQL framework.",
+            "id": 79
+          },
+          {
+            "name": "AngularJS is a JavaScript framework.",
+            "id": 80
+          }
+        ],
+        "id": 22
+        ,"Answer" : "AngularJS is a JavaScript framework."
+      },
+      {
+        "title": "Which architectural pattern does AngularJS follow?",
+        "options": [
+          {
+            "name": "Observer pattern.",
+            "id": 81
+          },
+          {
+            "name": "Decorator pattern.",
+            "id": 82
+          },
+          {
+            "name": "MVC architecture pattern.",
+            "id": 83
+          },
+          {
+            "name": "MVVM architectural pattern.",
+            "id": 84
+          }
+        ],
+        "id": 23
+        ,"Answer" : "MVVM architectural pattern."
+      },
+      {
+        "title": "Which type of applications are best suited for AngularJS?",
+        "options": [
+          {
+            "name": "Single Page Applications (SPAs).",
+            "id": 85
+          },
+          {
+            "name": "Multi-Page Applications (MPAs).",
+            "id": 86
+          },
+          {
+            "name": "Dynamic Page Applications (DPAs).",
+            "id": 87
+          },
+          {
+            "name": "Complex Page Applications (CPAs).",
+            "id": 88
+          }
+        ],
+        "id": 24
+        ,"Answer" : "Single Page Applications (SPAs)."
+      },
+      {
+        "title": "Which of the following is the correct way to bind an expression to an HTML element?",
+        "options": [
+          {
+            "name": "(expression)",
+            "id": 89
+          },
+          {
+            "name": "{{expression}}",
+            "id": 90
+          },
+          {
+            "name": "{{{expression}}}",
+            "id": 91
+          },
+          {
+            "name": "[expression]",
+            "id": 92
+          }
+        ],
+        "id": 25
+        ,"Answer" : "{{expression}}"
+      },
+      {
+        "title": "AngularJS is a front-end not back-end framework?",
+        "options": [
+          {
+            "name": "Yes",
+            "id": 93
+          },
+          {
+            "name": "No",
+            "id": 94
+          }
+        ],
+        "id": 26
+        ,"Answer" : "Yes"
+      },
+      {
+        "title": "Which directive is used to bind the values of AngularJS expressions to HTML elements?",
+        "options": [
+          {
+            "name": "ng-app directive.",
+            "id": 95
+          },
+          {
+            "name": "ng-model directive.",
+            "id": 96
+          },
+          {
+            "name": "ng-bind directive.",
+            "id": 97
+          },
+          {
+            "name": "ng-init directive.",
+            "id": 98
+          }
+        ],
+        "id": 27
+        ,"Answer" : "ng-bind directive."
+      },
+      {
+        "title": "What is the syntax for using filters in AngularJS expressions?",
+        "options": [
+          {
+            "name": "{{ expression | filter1 | filter2 | ... }}",
+            "id": 99
+          },
+          {
+            "name": "{{ expression | {filter1} | {filter2} | ... }}",
+            "id": 100
+          },
+          {
+            "name": "{{ expression - {filter1} - {filter2} - ... }}",
+            "id": 101
+          },
+          {
+            "name": "{{ {filter1} | {filter2} | ...-expression}}",
+            "id": 102
+          }
+        ],
+        "id": 28
+        ,"Answer" : "{{ expression | filter1 | filter2 | ... }}"
+      },
+      {
+        "title": "What is the purpose of the 'lowercase' filter in AngularJS?",
+        "options": [
+          {
+            "name": "To convert a text to uppercase text.",
+            "id": 103
+          },
+          {
+            "name": "To convert a text to lowercase text.",
+            "id": 104
+          },
+          {
+            "name": "To filter out the result from the AngularJS expression.",
+            "id": 105
+          },
+          {
+            "name": "To sort the result from the AngularJS expression.",
+            "id": 106
+          }
+        ],
+        "id": 29
+        ,"Answer" : "To convert a text to lowercase text."
+      },
+      {
+        "title": "What are some benefits of using AngularJS?",
+        "options": [
+          {
+            "name": "AngularJS code is unit testable.",
+            "id": 107
+          },
+          {
+            "name": "AngularJS provides reusable components.",
+            "id": 108
+          },
+          {
+            "name": "AngularJS uses dependency injection and separation of concerns.",
+            "id": 109
+          },
+          {
+            "name": "All of the above.",
+            "id": 110
+          }
+        ],
+        "id": 30
+        ,"Answer" : "All of the above."
+      },
+      {
+        "title": "What is the purpose of the 'ng-dirty' class in AngularJS forms?",
+        "options": [
+          {
+            "name": "To state that a value in the form has been changed.",
+            "id": 111
+          },
+          {
+            "name": "To state that the form has invalid data.",
+            "id": 112
+          },
+          {
+            "name": "To state that the form has been submitted.",
+            "id": 113
+          },
+          {
+            "name": "To state that the form is being edited.",
+            "id": 114
+          }
+        ],
+        "id": 31
+        ,"Answer" : "To state that a value in the form has been changed."
+      }
+    ],
+    "id": 3
+  }
+]
